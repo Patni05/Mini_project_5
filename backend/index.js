@@ -6,6 +6,9 @@ dotenv.config()
 const app = express()
 const port = process.env.PORT  || 5000
 
+// Global Middile Ware  --> can work with any route..
+app.use(express.json())
+
 
 app.listen(port, ()=>{
     connectDB()
