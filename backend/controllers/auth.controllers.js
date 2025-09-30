@@ -41,7 +41,7 @@ export const signUp  = async (req , res)=>{
             httpOnly:true
         })
 
-        return req.status(201).json(user)
+        return res.status(201).json(user)
 
     }
     catch (error)
@@ -80,7 +80,7 @@ export const signIn  = async (req , res)=>{
             httpOnly:true
         })
 
-        return req.status(200).json(user)
+        return res.status(200).json(user)
 
     }
     catch (error)

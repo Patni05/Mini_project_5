@@ -1,5 +1,5 @@
 import express from "express"
-import { signUp } from "../controllers/auth.controllers.js"
+import { signIn, signOut, signUp } from "../controllers/auth.controllers.js"
 
 const authRouter = express.Router()
 
@@ -9,3 +9,4 @@ authRouter.get("/signout",signOut)
 
 
 export default authRouter
+
